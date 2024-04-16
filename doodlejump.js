@@ -105,7 +105,7 @@ function update() {
 
     updateScore();
     context.fillStyle = "black";
-    context.font = "16px sans-serif";
+    context.font = "24px sans-serif";
     context.fillText(score, 5, 20);
 
     if (gameOver) {
