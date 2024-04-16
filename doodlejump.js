@@ -5,8 +5,8 @@ let boardHeight = 576;
 let context;
 
 //doodler
-let doodlerWidth = 55.96;
-let doodlerHeight = 80;
+let doodlerWidth = 44.77;
+let doodlerHeight = 64;
 let doodlerX = boardWidth/2 - doodlerWidth/2;
 let doodlerY = boardHeight*7/8 - doodlerHeight;
 let doodlerRightImg;
