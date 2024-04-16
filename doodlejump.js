@@ -137,20 +137,31 @@ function handleTouch(e) {
 }
 
 function resetGame() {
-    doodler = {
-        img : doodlerRightImg,
-        x : doodlerX,
-        y : doodlerY,
-        width : doodlerWidth,
-        height : doodlerHeight
-    };
+    // Reset the game state, remove the restart button
+    if (restartButton) {
+        document.body.removeChild(restartButton);
+        restartButton = null;
+    }
 
-    velocityX = 0;
-    velocityY = initialVelocityY;
-    score = 0;
-    maxScore = 0;
-    gameOver = false;
-    placePlatforms();
+    // Reset the doodler and game settings...
+}
+
+function showRestartButton() {
+    restartButton = document.createElement("button");
+    restartButton.textContent = "Restart";
+    restartButton.style.position = "absolute";
+    restartButton.style.left = `${boardWidth/2 - 50}px`;
+    restartButton.style.top = `${boardHeight/2 - 25}px`;
+    restartButton.style.width = "100px";
+    restartButton.style.height = "50px";
+    restartButton.style.background = "white";
+    restartButton.style.color = "black";
+    restartButton.style.border = "none";
+    restartButton.style.fontSize = "20px";
+    restartButton.style.zIndex = "100";
+
+    document.body.appendChild(restartButton);
+    restartButton.addEventListener("click", resetGame);
 }
 
 function placePlatforms() {
