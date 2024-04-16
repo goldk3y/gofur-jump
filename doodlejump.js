@@ -109,7 +109,7 @@ function update() {
     context.fillText(score, 5, 20);
 
     if (gameOver) {
-        context.fillText("Game Over: Press 'Space' to Restart", boardWidth/7, boardHeight*7/8, 16px);
+        context.fillText("Game Over: Press 'Space' to Restart", boardWidth/7, boardHeight*7/8);
     }
 }
 
