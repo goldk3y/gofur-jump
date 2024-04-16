@@ -29,7 +29,7 @@ let gravity = 0.4;
 //platforms
 let platformArray = [];
 let platformWidth = 60;
-let platformHeight = 18;
+let platformHeight = 40.31;
 let platformImg;
 
 let score = 0;
