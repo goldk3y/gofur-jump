@@ -104,7 +104,7 @@ function update() {
     }
 
     updateScore();
-    context.fillStyle = "black";
+    context.fillStyle = "white";
     context.font = "16px sans-serif";
     context.fillText(score, 5, 20);
 
